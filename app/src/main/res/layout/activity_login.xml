@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    tools:context=".Ui.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wellcome to Alrm List"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="23dp"
+            android:textColor="@color/white"></TextView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/register_log"
+            android:text="Register"
+            android:textColor="@color/blue"
+            android:layout_marginTop="120dp"
+            android:layout_marginLeft="300dp"></TextView>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:layout_gravity="center">
+
+        </ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:padding="20dp">
+            <EditText
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:id="@+id/email_login"
+                android:hint="@string/email"
+                android:background="@drawable/shape"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:textColor="@color/blue"
+                android:drawablePadding="16dp"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/baseline_email_24"></EditText>
+            <EditText
+                android:layout_width="380dp"
+                android:layout_height="60dp"
+                android:id="@+id/password_login"
+                android:hint="@string/password"
+                android:background="@drawable/shape"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:drawablePadding="16dp"
+                android:textColor="@color/blue"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_lock_24"></EditText>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btn_login"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:text="Login"
+                android:backgroundTint="@color/blue"></Button>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/register"
+    tools:context=".Ui.RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up Your Account"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:textSize="23dp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"/>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/logo"
+            android:layout_marginTop="110dp"
+            android:padding="23dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/LoginRegister"
+            android:text="Login"
+            android:textColor="@color/blue"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="300dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp"
+            android:padding="20dp">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/nama_register"
+                android:hint="@string/nama"
+                android:background="@drawable/shape"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:textColor="@color/blue"
+                android:drawablePadding="16dp"
+                android:inputType="text"
+                android:drawableLeft="@drawable/baseline_drive_file_rename_outline_24"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/email_register"
+                android:hint="@string/email"
+                android:background="@drawable/shape"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:drawablePadding="16dp"
+                android:textColor="@color/blue"
+                android:inputType="textEmailAddress"
+                android:drawableLeft="@drawable/baseline_email_24"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/password_register"
+                android:hint="@string/password"
+                android:background="@drawable/shape"
+                android:layout_marginTop="20dp"
+                android:padding="8dp"
+                android:textColor="@color/blue"
+                android:drawablePadding="16dp"
+                android:inputType="textPassword"
+                android:drawableLeft="@drawable/baseline_lock_24"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/SimpanRegister"
+                android:layout_marginTop="30dp"
+                android:padding="8dp"
+                android:text="Simpan"
+                android:backgroundTint="@color/blue"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</ScrollView>
